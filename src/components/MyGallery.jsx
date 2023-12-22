@@ -28,7 +28,7 @@ class MyGallery extends Component {
     return (
       <Container className="my-2" fluid>
         <h3 className="text-white">{this.props.searchValue.toUpperCase()}</h3>
-        <Row>
+        <Row className="row-cols-md-3 row-cols-xl-6 gy-2">
           {this.state.filmData.slice(0, 6).map((movie, index) => (
             <SingleMovie key={index} imageUrl={movie.Poster} />
           ))}
