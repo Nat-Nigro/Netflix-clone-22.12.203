@@ -3,7 +3,7 @@ import { Facebook, Instagram, Twitter, Youtube } from "react-bootstrap-icons";
 
 const Myfooter = () => {
   return (
-    <footer className="mt-5 mx-5">
+    <footer className="mt-5 mx-auto">
       <Container>
         <Row>
           <Col xs={12} lg={3} className="d-flex justify-content-center p-0 mb-3" id="bootstrap-icons">

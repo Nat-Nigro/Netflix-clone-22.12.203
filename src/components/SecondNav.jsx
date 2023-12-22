@@ -7,10 +7,10 @@ const SecondNav = () => (
       <Navbar.Brand href="#home" className="fs-3 fw-bold text-white">
         TV Shows
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" className="border border-white" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="border border-white " />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <NavDropdown title="Genres" className="border border-white bg-white ms-2" id="basic-nav-dropdown">
+          <NavDropdown title="Genres" className="border border-white bg-white text-white ms-2" id="basic-nav-dropdown">
             <NavDropdown.Item href="#">Comedy</NavDropdown.Item>
             <NavDropdown.Item href="#">Drama</NavDropdown.Item>
             <NavDropdown.Item href="#">Thriller</NavDropdown.Item>
