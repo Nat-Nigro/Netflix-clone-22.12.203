@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <MyNav />
       <SecondNav />
-      <MyGallery />
-      <MyGallery />
-      <MyGallery />
+      <MyGallery searchValue="batman" />
+      <MyGallery searchValue="avengers" />
+      <MyGallery searchValue="harry potter" />
       <MyFooter />
     </div>
   );

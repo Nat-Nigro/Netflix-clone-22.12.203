@@ -4,14 +4,13 @@ import SingleMovie from "./SingleMovie";
 
 class MyGallery extends Component {
   state = {
-    searchQuery: "batman",
     filmData: [],
   };
   filmDataFetch = async () => {
     const apiKey = "967961a2";
 
     try {
-      const response = await fetch(`http://www.omdbapi.com/?s=${this.state.searchQuery}&apikey=${apiKey}`);
+      const response = await fetch(`http://www.omdbapi.com/?s=${this.props.searchValue}&apikey=${apiKey}`);
 
       if (!response.ok) {
         throw new Error("ERROR");
@@ -28,7 +27,7 @@ class MyGallery extends Component {
   render() {
     return (
       <Container className="my-2" fluid>
-        <h3 className="text-white">{this.state.searchQuery.toUpperCase()}</h3>
+        <h3 className="text-white">{this.props.searchValue.toUpperCase()}</h3>
         <Row>
           {this.state.filmData.slice(0, 6).map((movie, index) => (
             <SingleMovie key={index} imageUrl={movie.Poster} />
